@@ -5,10 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
 
-        int operand1;
-        int operand2;
-        System.out.print(operand1);
-        System.out.print(operand2);
+
 
         Scanner in = new Scanner(System.in);
 
