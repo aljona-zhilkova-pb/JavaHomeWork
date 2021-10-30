@@ -7,6 +7,7 @@ public class Bingo {
 
         System.out.println("Guess the number from 1 to 100, you have 5 tries. Do you want to play?");
         System.out.println("To exit the program, enter - exit.");
+        System.out.println("See you later");
 
         final int MAX_ATTEMPT = 5;   // кол-во попыток ввода числа
         int attempt = 0;             //счетчик попыток
@@ -29,12 +30,9 @@ public class Bingo {
             } else if (operand < 0 || operand > 100) {
                 System.out.println("Input a number from 1 to 100:");
                 continue;
-            } else if (usersAnswer.equals("exit")) {
-                System.out.println("See you later");
-                break;
+            }
             }
             System.out.println("The end");
-        }
     }
 }
 
