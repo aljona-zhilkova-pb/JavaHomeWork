@@ -3,11 +3,11 @@ package com.pb.Zhilkova.hw4;
 import java.util.Scanner;
 
 public class Anagram {
-    Scanner in = new Scanner(System.in);
 
-    System.out.println("Input text: ");
+    //System.out.println("Input text: ");
+    Scanner in = new Scanner(System.in);
     String usersText = in.next();
-    int number = Integer.parseInt(usersText);
+    int text = Integer.parseInt(usersText);
 
     public String sort(String s){
 
