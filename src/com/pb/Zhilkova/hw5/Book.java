@@ -38,8 +38,4 @@ public class Book {
     public String toString(){
         return "The book:"+ title +";" + "autor:" + author + ";" + "age:" + age + ".";
     }
-
-    public static void main(String[] args) {
-
-    }
 }

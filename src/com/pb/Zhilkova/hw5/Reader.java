@@ -63,8 +63,6 @@ public class Reader {
 
     public static void main(String[] args) {
 
-    }
-
                     //методы takeBook(), returnBook():
                         // кол-во книг взял и вернул
     public void takeBook(int x) {
