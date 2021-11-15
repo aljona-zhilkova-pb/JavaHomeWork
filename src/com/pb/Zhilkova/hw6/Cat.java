@@ -12,7 +12,7 @@ public class Cat extends Animal {
         this.catSound = "Meow";
         this.catAge = catAge;
         this.catColor = catColor;
-
+    }
         @Override
         public void eat() {
             System.out.println("Cat eat: " + food);
@@ -43,6 +43,6 @@ public class Cat extends Animal {
             Cat c = (Cat) obj;
             return (this.catColor.equals(c.catColor) && this.catAge == c.catAge);
         }
-    }
 }
+
 

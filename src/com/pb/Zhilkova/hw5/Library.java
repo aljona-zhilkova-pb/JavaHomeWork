@@ -33,11 +33,12 @@ public class Library {
         reader3.takeBook(1);
 
         reader1.takeBook(book1.getTitle());
-        reader2.takeBook(book2.getAuthor(), book2.getTitle());
-        reader3.takeBook(book3.getTitle(), book3.getAuthor());
+        reader2.takeBook(book2.getAuthor(),book2.getTitle());
+        reader3.takeBook(book3.getTitle(),book3.getAuthor());
 
 
-        reader2.returnBook(book1.getTitle(), book1.getAuthor(), book3.getTitle(), book3.getAuthor());
+        reader2.returnBook(book1.getTitle(),book1.getAuthor(),book3.getTitle(),book3.getAuthor());
         reader3.returnBook(book2.getTitle());
-    }
 }
+}
+

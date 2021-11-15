@@ -13,6 +13,7 @@ public class Horse extends Animal {
         this.horseSound = "Neigh";
         this.horseAge = horseAge;
         this.horseColor = horseColor;
+    }
 
     @Override
     public void eat() {
@@ -30,7 +31,7 @@ public class Horse extends Animal {
     }
     @Override
     public String toString() {
-        return horseColor + "horse," + horseAge + "," + "eat-" + food + "," + "location:" + location);
+        return horseColor + "horse," + horseAge + "," + "eat-" + food + "," + "location:" + location;
     }
 
     @Override
@@ -45,5 +46,4 @@ public class Horse extends Animal {
             Horse h = (Horse) obj;
             return (this.horseColor.equals(h.horseColor) && this.horseAge==h.horseAge);
      }
-   }
 }

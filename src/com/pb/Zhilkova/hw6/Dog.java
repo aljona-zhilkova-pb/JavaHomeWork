@@ -13,7 +13,7 @@ public class Dog extends Animal {
         this.dogSound = "Woof";
         this.dogAge = dogAge;
         this.dogColor = dogColor;
-
+    }
         @Override
         public void eat() {
             System.out.println("Dog eat: "  + food);
@@ -44,8 +44,8 @@ public class Dog extends Animal {
             return (this.dogColor.equals(d.dogColor) && this.dogAge==d.dogAge);
         }
 
-    }
 }
+
 
 
 

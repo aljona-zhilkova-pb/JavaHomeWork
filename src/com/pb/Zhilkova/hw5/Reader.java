@@ -1,13 +1,11 @@
 package com.pb.Zhilkova.hw5;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 import static com.pb.Zhilkova.hw5.Book.books;
 
 //переменные
 public class Reader {
-    public static List<Reader> readers = new ArrayList<>();
     private String nameReader;
     private int numberLibrary;
     private String faculty;
@@ -36,6 +34,7 @@ public class Reader {
         return numberLibrary;
     }
     public void setNumberLibrary(int numberLibrary) {
+
     this.numberLibrary = numberLibrary;
     }
 
@@ -68,7 +67,7 @@ public class Reader {
           return "The reader:" + nameReader + ", the number in Librery:" + numberLibrary + ", the faculty:" + faculty + ", the date of birthday:" + birthday + ", the number of  the cellphone" + cellphone + ".";
     }
 
-    public static void main(String[] args) {
+
 
                     //методы takeBook(), returnBook():
                         // кол-во книг взял и вернул
