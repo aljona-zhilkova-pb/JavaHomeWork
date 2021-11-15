@@ -16,26 +16,35 @@ public class Book {
     }
                             //геттеры  и сеттеры
     public String getAuthor() {
+
         return author;
     }
     public void setAuthor(String author){
+
         this.author = author;
     }
 
     public String getTitle() {
+
         return title;
     }
     public void setTitle(String title){
+
         this.title = title;
     }
 
     public int getAge() {
+
         return age;
     }
     public void setAge(Integer age){
+
         this.age = age;
     }
     public String toString(){
+
         return "The book:"+ title +";" + "autor:" + author + ";" + "age:" + age + ".";
+    }
+    public static void main(String[] args) {
     }
 }

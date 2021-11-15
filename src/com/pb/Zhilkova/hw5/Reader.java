@@ -24,10 +24,12 @@ public class Reader {
     }
                             //геттеры и сеттеры
     public String getNameReader() {
+
         return nameReader;
     }
     public void setNameReader(String nameReader) {
-    this.nameReader = nameReader;
+
+        this.nameReader = nameReader;
     }
 
     public Integer getNumberLibrary() {
@@ -41,20 +43,25 @@ public class Reader {
         return faculty;
     }
     public void setFaculty(String faculty){
+
         this.faculty = faculty;
     }
 
     public String birthday() {
+
         return birthday;
     }
     public void setBirthday(String birthday){
+
         this.birthday = birthday;
     }
 
     public String getCellphone() {
+
         return cellphone;
     }
     public void setCellphone(String cellphone) {
+
         this.cellphone = cellphone;
     }
     public String toString() {
@@ -66,22 +73,22 @@ public class Reader {
                     //методы takeBook(), returnBook():
                         // кол-во книг взял и вернул
     public void takeBook(int x) {
-        System.out.println(nameReader + "take" + x + "book(books).");
+        System.out.println("The reader:" + nameReader + "take" + x + "book(books).");
     }
 
     public void returnBook(int y) {
-        System.out.println(nameReader + "return" + y + "book(books).");
+        System.out.println("The reader:" + nameReader + "return" + y + "book(books).");
     }
                     //читатель н взял(вернул) такие книги
     public void takeBook(Book... books) {
-        System.out.println(nameReader + "take book(books): ");
+        System.out.println("The reader:" + nameReader + "take book(books): ");
         for (Book book: books){
             System.out.println(book);
         }
     }
 
     public void returnBook(Book... books) {
-        System.out.println(nameReader + "return book(books): ");
+        System.out.println("The reader:" + nameReader + "return book(books): ");
         for (Book book: books){
             System.out.println(book);
         }

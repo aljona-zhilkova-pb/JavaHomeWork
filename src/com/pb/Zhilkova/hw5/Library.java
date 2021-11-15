@@ -36,7 +36,7 @@ public class Library {
         reader2.takeBook(book2.getAuthor(), book2.getTitle());
         reader3.takeBook(book3.getTitle(), book3.getAuthor());
 
-        reader1.getNameReader();
+
         reader2.returnBook(book1.getTitle(), book1.getAuthor(), book3.getTitle(), book3.getAuthor());
         reader3.returnBook(book2.getTitle());
     }
