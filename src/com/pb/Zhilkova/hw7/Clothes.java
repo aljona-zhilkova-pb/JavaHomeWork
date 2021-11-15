@@ -1,6 +1,5 @@
 package com.pb.Zhilkova.hw7;
 
-import com.sun.glass.ui.Size;
 
 public abstract class Clothes {
 
