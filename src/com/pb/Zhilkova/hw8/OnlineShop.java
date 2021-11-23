@@ -15,11 +15,12 @@ public class OnlineShop {
         String password = scan.nextLine();
         System.out.println("Registration successful! Welcome to the site!");
 
-        Auth auth = new Auth(login, password);
-
         System.out.println("Input login:");
         System.out.println("Input password:");
         String confirmPassword = scan.nextLine();
+
+        Auth auth = new Auth(login, password);
+
 
         try {
             auth.singUp(login, password, confirmPassword);
@@ -27,12 +28,10 @@ public class OnlineShop {
             System.out.println("Password or login does not meet requirements!" + e);
         } catch (WrongPasswordException e1) {
             System.out.println("Password or login does not meet requirements!" + e1);
-        } catch (WrongPasswordException e2) {
-            System.out.println("Password or login does not meet requirements!" + e2);
         }
 
         try {
-            auth.singIn(login, password, confirmPassword);
+            auth.singIn(login, password);
         }catch (WrongLoginException e) {
             System.out.println("Password or login does not meet requirements!" + e + "Input login and password:");
         }catch (WrongPasswordException e1) {
