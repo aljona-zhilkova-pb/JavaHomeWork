@@ -61,7 +61,6 @@ public class FileNumbers {
                 for (int j = 0; j < 10; j++) {
 
                     writer.write(array[i][j] + " ! ");
-
                 }
                 writer.write("\n");
             }
@@ -70,7 +69,6 @@ public class FileNumbers {
             e.printStackTrace();
             System.exit(0);
         }
-
         System.out.println(new String(Files.readAllBytes(Paths.get("odd_numbers.txt"))));
     }
     public static void main(String[] args) throws IOException {
