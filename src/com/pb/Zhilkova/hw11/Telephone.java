@@ -44,9 +44,9 @@ public class Telephone implements Serializable {
         return dateOfEdit;
     }
 
-    public Contact(String name, String phone) {}
+    public Telephone(String name, String phone) {}
 
-    public Contact(String name, String phone, String address, LocalDate dateOfBirth, LocalDateTime dateOfEdit) {
+    public Telephone(String name, String phone, String address, LocalDate dateOfBirth, LocalDateTime dateOfEdit) {
         this.name = name;
         this.phone = phone;
         this.address = address;
