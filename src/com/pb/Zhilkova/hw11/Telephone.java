@@ -52,7 +52,7 @@ public class Telephone implements Serializable {
         this.dateOfEdit = dateOfEdit;
     }
     public String toString() {
-        return "Имя " + name + ", телефон " + phone + ", адрес " + address + ", дата рождения " +
-                dateOfBirth + ", дата редактирования " + dateOfEdit;
+        return "Name" + name + ", phone " + phone + ", adress " + address + ", birthday " +
+                dateOfBirth + ", date rename " + dateOfEdit;
     }
 }
