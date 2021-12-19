@@ -7,7 +7,6 @@ public abstract class NumBox <T> extends Number{
     int index;
     private final T[] numbers;
 
-
     public NumBox(int size) {
         numbers = (T[]) new Number[size];
     }
@@ -43,10 +42,8 @@ public abstract class NumBox <T> extends Number{
         double sum = 0.0;
         for (T i : numbers) {
             if (i == null) {
-                sum+=0;
-            } else {
-                sum += i.doubleValue();
-            }
+                sum += 0;
+            } else sum = sum + T.doubleValue(i);
         }
         return sum;
     }
