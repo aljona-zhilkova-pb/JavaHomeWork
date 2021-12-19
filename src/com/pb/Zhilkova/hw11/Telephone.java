@@ -11,7 +11,7 @@ public class Telephone implements Serializable {
     String name;
     private String phone;
     private String address;
-    private transient LocalDate dateOfBirth;                               //не сериализуется
+    private transient LocalDate dateOfBirth;
     private LocalDateTime dateOfEdit;
 
     public void setName(String name, LocalDateTime dateOfEdit) {
