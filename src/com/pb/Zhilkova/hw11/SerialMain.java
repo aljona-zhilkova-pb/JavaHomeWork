@@ -42,7 +42,6 @@ public class SerialMain {
         ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("person.data"));
         newList = (ArrayList<Person>)objectInputStream.readObject();
 
-        // System.out.printf("Name: %s \t Age: %d \n", p.getName(), p.getAge());;
         for(Person p : newList) {
             System.out.println(p.getName());
             System.out.println(p.toString());
